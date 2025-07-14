@@ -2,6 +2,7 @@
 
 import { z as zod } from 'zod';
 import { useState } from 'react';
+import { signIn } from 'next-auth/react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 
@@ -19,11 +20,11 @@ import { RouterLink } from 'src/routes/components';
 
 import { useBoolean } from 'src/hooks/use-boolean';
 
+import { toast } from 'src/components/snackbar';
 import { Iconify } from 'src/components/iconify';
 import { Form, Field } from 'src/components/hook-form';
 
 import { useAuthContext } from 'src/auth/hooks';
-import { signInWithPassword } from 'src/auth/context/jwt';
 
 // ----------------------------------------------------------------------
 
@@ -66,14 +67,22 @@ export function JwtSignInView() {
     formState: { isSubmitting },
   } = methods;
 
-  const onSubmit = handleSubmit(async (data) => {
+  const onSubmit = handleSubmit(async (user) => {
     try {
-      await signInWithPassword({ email: data.email, password: data.password });
-      await checkUserSession?.();
-
-      router.refresh();
+      const res = await signIn('credentials', {
+        email: user.email,
+        password: user.password,
+        redirect: false,
+      });
+      if (res?.ok) {
+        toast.success('User logged in successfully');
+        await checkUserSession?.();
+        router.push('/dashboard');
+      } else {
+        setErrorMsg(res?.error || 'Login failed');
+      }
     } catch (error) {
-      console.error(error);
+      toast(error);
       setErrorMsg(error instanceof Error ? error.message : error);
     }
   });

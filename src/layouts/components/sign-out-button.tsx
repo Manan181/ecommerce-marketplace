@@ -3,6 +3,7 @@ import type { Theme, SxProps } from '@mui/material/styles';
 
 import { useCallback } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
+import { signOut as signOutNextAuth } from 'next-auth/react';
 
 import Button from '@mui/material/Button';
 
@@ -13,7 +14,6 @@ import { CONFIG } from 'src/config-global';
 import { toast } from 'src/components/snackbar';
 
 import { useAuthContext } from 'src/auth/hooks';
-import { signOut as jwtSignOut } from 'src/auth/context/jwt/action';
 import { signOut as amplifySignOut } from 'src/auth/context/amplify/action';
 import { signOut as supabaseSignOut } from 'src/auth/context/supabase/action';
 import { signOut as firebaseSignOut } from 'src/auth/context/firebase/action';
@@ -24,7 +24,7 @@ const signOut =
   (CONFIG.auth.method === 'supabase' && supabaseSignOut) ||
   (CONFIG.auth.method === 'firebase' && firebaseSignOut) ||
   (CONFIG.auth.method === 'amplify' && amplifySignOut) ||
-  jwtSignOut;
+  signOutNextAuth;
 
 type Props = ButtonProps & {
   sx?: SxProps<Theme>;
@@ -40,7 +40,7 @@ export function SignOutButton({ onClose, ...other }: Props) {
 
   const handleLogout = useCallback(async () => {
     try {
-      await signOut();
+      await signOut({ redirect: false });
       await checkUserSession?.();
 
       onClose?.();

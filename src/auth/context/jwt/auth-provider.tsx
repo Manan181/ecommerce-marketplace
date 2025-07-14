@@ -1,14 +1,11 @@
 'use client';
 
+import { getSession } from 'next-auth/react';
 import { useMemo, useEffect, useCallback } from 'react';
 
 import { useSetState } from 'src/hooks/use-set-state';
 
-import axios, { endpoints } from 'src/utils/axios';
-
-import { STORAGE_KEY } from './constant';
 import { AuthContext } from '../auth-context';
-import { setSession, isValidToken } from './utils';
 
 import type { AuthState } from '../../types';
 
@@ -32,16 +29,12 @@ export function AuthProvider({ children }: Props) {
 
   const checkUserSession = useCallback(async () => {
     try {
-      const accessToken = sessionStorage.getItem(STORAGE_KEY);
+      const sessionData = await getSession();
 
-      if (accessToken && isValidToken(accessToken)) {
-        setSession(accessToken);
+      if (sessionData) {
+        const { user } = sessionData;
 
-        const res = await axios.get(endpoints.auth.me);
-
-        const { user } = res.data;
-
-        setState({ user: { ...user, accessToken }, loading: false });
+        setState({ user, loading: false });
       } else {
         setState({ user: null, loading: false });
       }
