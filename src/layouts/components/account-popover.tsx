@@ -12,8 +12,6 @@ import { useRouter, usePathname } from 'src/routes/hooks';
 import { Label } from 'src/components/label';
 import { usePopover, CustomPopover } from 'src/components/custom-popover';
 
-import { useMockedUser } from 'src/auth/hooks';
-
 import { AccountButton } from './account-button';
 import { SignOutButton } from './sign-out-button';
 
@@ -35,8 +33,6 @@ export function AccountPopover({ data = [], sx, ...other }: AccountPopoverProps)
 
   const pathname = usePathname();
 
-  const { user } = useMockedUser();
-
   const handleClickItem = (path: string) => {
     popover.onClose();
     router.push(path);
@@ -47,8 +43,8 @@ export function AccountPopover({ data = [], sx, ...other }: AccountPopoverProps)
       <AccountButton
         open={popover.open}
         onClick={popover.onOpen}
-        photoURL={user?.photoURL}
-        displayName={user?.displayName}
+        photoURL=""
+        displayName="Manan"
         sx={sx}
         {...other}
       />
@@ -64,11 +60,11 @@ export function AccountPopover({ data = [], sx, ...other }: AccountPopoverProps)
       >
         <Box sx={{ p: 2, pb: 1.5 }}>
           <Typography variant="subtitle2" noWrap>
-            {user?.displayName}
+            Manan
           </Typography>
 
           <Typography variant="body2" sx={{ color: 'text.secondary' }} noWrap>
-            {user?.email}
+            manan@gmail.com
           </Typography>
         </Box>
 

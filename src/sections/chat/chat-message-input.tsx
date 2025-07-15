@@ -16,8 +16,6 @@ import { sendMessage, createConversation } from 'src/actions/chat';
 
 import { Iconify } from 'src/components/iconify';
 
-import { useMockedUser } from 'src/auth/hooks';
-
 // ----------------------------------------------------------------------
 
 type Props = {
@@ -35,25 +33,23 @@ export function ChatMessageInput({
 }: Props) {
   const router = useRouter();
 
-  const { user } = useMockedUser();
-
   const fileRef = useRef<HTMLInputElement>(null);
 
   const [message, setMessage] = useState('');
 
   const myContact = useMemo(
     () => ({
-      id: `${user?.id}`,
-      role: `${user?.role}`,
-      email: `${user?.email}`,
-      address: `${user?.address}`,
-      name: `${user?.displayName}`,
+      id: `1`,
+      role: `admin`,
+      email: `manan.s@biztechcs.com`,
+      address: `abc street, xyz road`,
+      name: `Manan`,
       lastActivity: today(),
-      avatarUrl: `${user?.photoURL}`,
-      phoneNumber: `${user?.phoneNumber}`,
+      avatarUrl: ``,
+      phoneNumber: `7621012345`,
       status: 'online' as 'online' | 'offline' | 'alway' | 'busy',
     }),
-    [user]
+    []
   );
 
   const messageData = useMemo(

@@ -13,8 +13,6 @@ import Typography from '@mui/material/Typography';
 import { paths } from 'src/routes/paths';
 import { RouterLink } from 'src/routes/components';
 
-import { _socials } from 'src/_mock';
-
 import { Logo } from 'src/components/logo';
 import { SocialIcon } from 'src/components/iconify';
 
@@ -93,7 +91,7 @@ export function Footer({ layoutQuery, sx }: FooterProps) {
                 [theme.breakpoints.up(layoutQuery)]: { mb: 0, justifyContent: 'flex-start' },
               }}
             >
-              {_socials.map((social) => (
+              {[].map((social: any) => (
                 <IconButton key={social.name}>
                   <SocialIcon icon={social.name} />
                 </IconButton>

@@ -13,7 +13,6 @@ import Typography from '@mui/material/Typography';
 
 import { fToNow } from 'src/utils/format-time';
 
-import { _mock } from 'src/_mock';
 import { maxLine, varAlpha, textGradient } from 'src/theme/styles';
 
 import { varFade, MotionViewport, AnimateCountUp } from 'src/components/animate';
@@ -214,9 +213,9 @@ export function HomeTestimonials({ sx, ...other }: StackProps) {
 // ----------------------------------------------------------------------
 
 const base = (index: number) => ({
-  id: _mock.id(index),
-  name: _mock.fullName(index),
-  avatar: _mock.image.avatar(index),
+  id: 1,
+  name: 'Manan Sonani',
+  avatar: '',
   rating: 5,
 });
 

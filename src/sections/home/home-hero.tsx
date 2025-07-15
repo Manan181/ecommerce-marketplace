@@ -20,7 +20,6 @@ import { RouterLink } from 'src/routes/components';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 
-import { _mock } from 'src/_mock';
 import { CONFIG } from 'src/config-global';
 import { textGradient } from 'src/theme/styles';
 
@@ -128,9 +127,9 @@ export function HomeHero({ sx, ...other }: StackProps) {
         <AvatarGroup sx={{ [`& .${avatarClasses.root}`]: { width: 32, height: 32 } }}>
           {[...Array(3)].map((_, index) => (
             <Avatar
-              key={_mock.fullName(index + 1)}
-              alt={_mock.fullName(index + 1)}
-              src={_mock.image.avatar(index + 1)}
+              key="_mock.fullName(index + 1)"
+              alt="_mock.fullName(index + 1)"
+              src="_mock.image.avatar(index + 1)"
             />
           ))}
         </AvatarGroup>

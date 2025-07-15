@@ -7,11 +7,8 @@ import Grid from '@mui/material/Unstable_Grid2';
 
 import { DashboardContent } from 'src/layouts/dashboard';
 import { SeoIllustration } from 'src/assets/illustrations';
-import { _appAuthors, _appRelated, _appFeatured, _appInvoices, _appInstalled } from 'src/_mock';
 
 import { svgColorClasses } from 'src/components/svg-color';
-
-import { useMockedUser } from 'src/auth/hooks';
 
 import { AppWidget } from '../app-widget';
 import { AppWelcome } from '../app-welcome';
@@ -27,8 +24,6 @@ import { AppTopInstalledCountries } from '../app-top-installed-countries';
 // ----------------------------------------------------------------------
 
 export function OverviewAppView() {
-  const { user } = useMockedUser();
-
   const theme = useTheme();
 
   return (
@@ -36,7 +31,7 @@ export function OverviewAppView() {
       <Grid container spacing={3}>
         <Grid xs={12} md={8}>
           <AppWelcome
-            title={`Welcome back 👋 \n ${user?.displayName}`}
+            title={`Welcome back 👋 \n ${'Manan'}`}
             description="If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything."
             img={<SeoIllustration hideBackground />}
             action={
@@ -48,7 +43,7 @@ export function OverviewAppView() {
         </Grid>
 
         <Grid xs={12} md={4}>
-          <AppFeatured list={_appFeatured} />
+          <AppFeatured list={[]} />
         </Grid>
 
         <Grid xs={12} md={4}>
@@ -156,7 +151,7 @@ export function OverviewAppView() {
         <Grid xs={12} lg={8}>
           <AppNewInvoice
             title="New invoice"
-            tableData={_appInvoices}
+            tableData={[]}
             headLabel={[
               { id: 'id', label: 'Invoice ID' },
               { id: 'category', label: 'Category' },
@@ -168,15 +163,15 @@ export function OverviewAppView() {
         </Grid>
 
         <Grid xs={12} md={6} lg={4}>
-          <AppTopRelated title="Related applications" list={_appRelated} />
+          <AppTopRelated title="Related applications" list={[]} />
         </Grid>
 
         <Grid xs={12} md={6} lg={4}>
-          <AppTopInstalledCountries title="Top installed countries" list={_appInstalled} />
+          <AppTopInstalledCountries title="Top installed countries" list={[]} />
         </Grid>
 
         <Grid xs={12} md={6} lg={4}>
-          <AppTopAuthors title="Top authors" list={_appAuthors} />
+          <AppTopAuthors title="Top authors" list={[]} />
         </Grid>
 
         <Grid xs={12} md={6} lg={4}>

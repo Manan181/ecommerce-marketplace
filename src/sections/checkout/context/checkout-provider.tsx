@@ -10,8 +10,6 @@ import { useRouter, useSearchParams } from 'src/routes/hooks';
 
 import { getStorage, useLocalStorage } from 'src/hooks/use-local-storage';
 
-import { PRODUCT_CHECKOUT_STEPS } from 'src/_mock/_product';
-
 import { SplashScreen } from 'src/components/loading-screen';
 
 // ----------------------------------------------------------------------
@@ -60,7 +58,7 @@ function Container({ children }: Props) {
     initialState
   );
 
-  const completed = activeStep === PRODUCT_CHECKOUT_STEPS.length;
+  const completed = activeStep === 3;
 
   const updateTotalField = useCallback(() => {
     const totalItems: number = state.items.reduce(
