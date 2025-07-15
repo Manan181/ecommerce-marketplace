@@ -10,8 +10,6 @@ import { fToNow } from 'src/utils/format-time';
 
 import { Iconify } from 'src/components/iconify';
 
-import { useMockedUser } from 'src/auth/hooks';
-
 import { useMessage } from './hooks/use-message';
 
 // ----------------------------------------------------------------------
@@ -23,12 +21,10 @@ type Props = {
 };
 
 export function ChatMessageItem({ message, participants, onOpenLightbox }: Props) {
-  const { user } = useMockedUser();
-
   const { me, senderDetails, hasImage } = useMessage({
     message,
     participants,
-    currentUserId: `${user?.id}`,
+    currentUserId: `${'1'}`,
   });
 
   const { firstName, avatarUrl } = senderDetails;

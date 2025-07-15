@@ -15,15 +15,12 @@ import { DashboardContent } from 'src/layouts/dashboard';
 
 import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
 
-import { useMockedUser } from 'src/auth/hooks';
 import { RoleBasedGuard } from 'src/auth/guard';
 
 // ----------------------------------------------------------------------
 
 export function PermissionDeniedView() {
   const [role, setRole] = useState('admin');
-
-  const { user } = useMockedUser();
 
   const handleChangeRole = useCallback(
     (event: React.MouseEvent<HTMLElement>, newRole: string | null) => {
@@ -57,7 +54,7 @@ export function PermissionDeniedView() {
         </ToggleButton>
       </ToggleButtonGroup>
 
-      <RoleBasedGuard hasContent currentRole={user?.role} acceptRoles={[role]} sx={{ py: 10 }}>
+      <RoleBasedGuard hasContent currentRole="admin" acceptRoles={[role]} sx={{ py: 10 }}>
         <Box gap={3} display="grid" gridTemplateColumns="repeat(2, 1fr)">
           {[...Array(8)].map((_, index) => (
             <Card key={index}>

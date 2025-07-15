@@ -1,0 +1,67 @@
+{
+  // Editor settings
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.minimap.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  // ESLint settings
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "eslint.workingDirectories": ["./"],
+
+  "search.exclude": {
+    "**/node_modules": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "env-*": true
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "env*": true
+  },
+  "disable-hardware-acceleration": true,
+  // Prettier settings
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.tabWidth": 2,
+  "prettier.semi": false,
+
+  // Workbench color customizations
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#1b6592",
+    "activityBar.background": "#1b6592",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#510f38",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#e7e7e799",
+    "sash.hoverBorder": "#1b6592",
+    "statusBar.background": "#134767",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#1b6592",
+    "statusBarItem.remoteBackground": "#134767",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#134767",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#13476799",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+
+  // Peacock settings (if applicable)
+  "peacock.color": "#134767",
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
+  },
+  "postman.settings.dotenv-detection-notification-visibility": false
+}
