@@ -29,3 +29,9 @@ export type ISocialLink = {
   linkedin: string;
   twitter: string;
 };
+
+export enum StatusType {
+  ACTIVE = 'active',
+  INACTIVE = 'inactive',
+  ALL = 'all',
+}

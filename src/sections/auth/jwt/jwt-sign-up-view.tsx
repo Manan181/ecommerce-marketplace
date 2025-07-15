@@ -19,10 +19,12 @@ import { RouterLink } from 'src/routes/components';
 
 import { useBoolean } from 'src/hooks/use-boolean';
 
+import { signUp } from 'src/actions/auth.action';
+
+import { toast } from 'src/components/snackbar';
 import { Iconify } from 'src/components/iconify';
 import { Form, Field } from 'src/components/hook-form';
 
-import { signUp } from 'src/auth/context/jwt';
 import { useAuthContext } from 'src/auth/hooks';
 
 // ----------------------------------------------------------------------
@@ -70,17 +72,23 @@ export function JwtSignUpView() {
     formState: { isSubmitting },
   } = methods;
 
-  const onSubmit = handleSubmit(async (data) => {
+  const onSubmit = handleSubmit(async (user) => {
     try {
-      await signUp({
-        email: data.email,
-        password: data.password,
-        firstName: data.firstName,
-        lastName: data.lastName,
+      const { message, success, data, error } = await signUp({
+        email: user.email,
+        password: user.password,
+        firstName: user.firstName,
+        lastName: user.lastName,
       });
-      await checkUserSession?.();
 
-      router.refresh();
+      if (error) {
+        toast.error(error);
+      }
+      if (success && data) {
+        toast.success(message);
+        await checkUserSession?.();
+        router.push('/dashboard');
+      }
     } catch (error) {
       console.error(error);
       setErrorMsg(error instanceof Error ? error.message : error);
