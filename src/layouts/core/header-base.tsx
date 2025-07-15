@@ -160,7 +160,7 @@ export function HeaderBase({
               {helpLink && (
                 <Link
                   data-slot="help-link"
-                  href={paths.faqs}
+                  href="#"
                   component={RouterLink}
                   color="inherit"
                   sx={{ typography: 'subtitle2' }}

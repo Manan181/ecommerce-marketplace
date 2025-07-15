@@ -1,11 +1,11 @@
-import type { IUser } from 'src/models/User';
 import type { SessionStrategy } from 'next-auth';
+import type { IUser } from 'src/models/user.model';
 
 import bcrypt from 'bcrypt';
 import NextAuth from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
 
-import User from 'src/models/User';
+import User from 'src/models/user.model';
 import { connectDB } from 'src/lib/mongoose';
 
 const authOptions = {
@@ -32,7 +32,7 @@ const authOptions = {
         return {
           id: user._id.toString(),
           email: user.email,
-          name: `${user.firstName} ${user.lastName}`,
+          name: `${user.profile.firstName} ${user.profile.lastName}`,
         };
       },
     }),
