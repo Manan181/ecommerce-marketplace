@@ -5,7 +5,7 @@ module.exports = {
   root: true,
   env: { browser: true, es2020: true },
   plugins: ['perfectionist', 'unused-imports', '@typescript-eslint', 'prettier'],
-  extends: ['airbnb', 'airbnb-typescript', 'airbnb/hooks', 'prettier'],
+  extends: ['airbnb', 'airbnb-typescript', 'airbnb/hooks', 'next', 'prettier'],
   parserOptions: {
     sourceType: 'module',
     ecmaVersion: 'latest',
@@ -105,5 +105,8 @@ module.exports = {
         'internal-pattern': ['src/**'],
       },
     ],
+    // nextjs
+    '@next/next/no-html-link-for-pages': 'off',
+    '@next/next/no-img-element': 'off',
   },
 };
