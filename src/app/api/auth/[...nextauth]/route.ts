@@ -8,7 +8,7 @@ import CredentialsProvider from 'next-auth/providers/credentials';
 import User from 'src/models/User';
 import { connectDB } from 'src/lib/mongoose';
 
-export const authOptions = {
+const authOptions = {
   providers: [
     CredentialsProvider({
       name: 'Credentials',
