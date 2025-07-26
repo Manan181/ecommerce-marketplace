@@ -1,0 +1,139 @@
+/* Basic styling for the store */
+
+header {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+footer {
+  padding: 1rem;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+}
+
+.product-card button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.product-detail {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.product-detail img {
+  max-width: 400px;
+}
+
+.cart-page {
+  padding: 2rem;
+}
+
+.cart-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.cart-items {
+  flex: 2;
+}
+
+.cart-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+}
+
+.item-details {
+  flex: 1;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cart-summary {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.checkout-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.checkout-page {
+  padding: 2rem;
+}
+
+.checkout-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.shipping-form, .payment-form {
+  flex: 1;
+}
+
+.shipping-form input, .payment-form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.place-order-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.order-confirmation-page {
+  text-align: center;
+  padding: 4rem;
+}

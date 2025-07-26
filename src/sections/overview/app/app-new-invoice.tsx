@@ -1,5 +1,12 @@
 import type { CardProps } from '@mui/material/Card';
-import type { TableHeadCustomProps } from 'src/components/table';
+import type { TableHeadCustomProps } from '@/components/table';
+
+import { Label } from '@/components/label';
+import { Iconify } from '@/components/iconify';
+import { fCurrency } from '@/utils/format-number';
+import { Scrollbar } from '@/components/scrollbar';
+import { TableHeadCustom } from '@/components/table';
+import { usePopover, CustomPopover } from '@/components/custom-popover';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -13,14 +20,6 @@ import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import CardHeader from '@mui/material/CardHeader';
 import IconButton from '@mui/material/IconButton';
-
-import { fCurrency } from 'src/utils/format-number';
-
-import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
-import { Scrollbar } from 'src/components/scrollbar';
-import { TableHeadCustom } from 'src/components/table';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
 
 // ----------------------------------------------------------------------
 

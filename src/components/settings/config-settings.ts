@@ -1,4 +1,4 @@
-import { defaultFont } from 'src/theme/core/typography';
+import { defaultFont } from '@/theme/core/typography';
 
 import type { SettingsState } from './types';
 

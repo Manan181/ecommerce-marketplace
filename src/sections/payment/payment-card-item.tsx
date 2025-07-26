@@ -1,5 +1,9 @@
-import type { IPaymentCard } from 'src/types/common';
+import type { IPaymentCard } from '@/types/common';
 import type { PaperProps } from '@mui/material/Paper';
+
+import { Label } from '@/components/label';
+import { Iconify } from '@/components/iconify';
+import { usePopover, CustomPopover } from '@/components/custom-popover';
 
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
@@ -7,10 +11,6 @@ import MenuList from '@mui/material/MenuList';
 import MenuItem from '@mui/material/MenuItem';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-
-import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
 
 // ----------------------------------------------------------------------
 

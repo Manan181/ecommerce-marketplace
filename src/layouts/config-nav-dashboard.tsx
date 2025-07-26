@@ -1,10 +1,8 @@
-import { paths } from 'src/routes/paths';
-
-import { CONFIG } from 'src/config-global';
-
-import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
-import { SvgColor } from 'src/components/svg-color';
+import { paths } from '@/routes/paths';
+import { CONFIG } from '@/config-global';
+import { Label } from '@/components/label';
+import { Iconify } from '@/components/iconify';
+import { SvgColor } from '@/components/svg-color';
 
 // ----------------------------------------------------------------------
 
@@ -81,7 +79,7 @@ export const navData = [
         // roles: ['user'] Only users can see this item.
         // roles: ['admin'] Only admin can see this item.
         // roles: ['admin', 'manager'] Only admin/manager can see this item.
-        // Reference from 'src/guards/RoleBasedGuard'.
+        // Reference from '@/guards/RoleBasedGuard'.
         title: 'Permission',
         path: paths.dashboard.permission,
         icon: ICONS.lock,

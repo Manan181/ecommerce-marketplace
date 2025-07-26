@@ -1,14 +1,13 @@
 'use client';
 
+import { DashboardContent } from '@/layouts/dashboard';
+import { SeoIllustration } from '@/assets/illustrations';
+import { svgColorClasses } from '@/components/svg-color';
+
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { useTheme } from '@mui/material/styles';
 import Grid from '@mui/material/Unstable_Grid2';
-
-import { DashboardContent } from 'src/layouts/dashboard';
-import { SeoIllustration } from 'src/assets/illustrations';
-
-import { svgColorClasses } from 'src/components/svg-color';
 
 import { AppWidget } from '../app-widget';
 import { AppWelcome } from '../app-welcome';

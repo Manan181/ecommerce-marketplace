@@ -1,6 +1,6 @@
-import type { NavSectionProps, NavItemBaseProps } from 'src/components/nav-section';
+import type { NavSectionProps, NavItemBaseProps } from '@/components/nav-section';
 
-import { flattenArray } from 'src/utils/helper';
+import { flattenArray } from '@/utils/helper';
 
 // ----------------------------------------------------------------------
 

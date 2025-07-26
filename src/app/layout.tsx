@@ -1,26 +1,23 @@
-import 'src/global.css';
+import '@/global.css';
 
 // ----------------------------------------------------------------------
 
 import type { Viewport } from 'next';
 
-import { CONFIG } from 'src/config-global';
-import { primary } from 'src/theme/core/palette';
-import { LocalizationProvider } from 'src/locales';
-import { detectLanguage } from 'src/locales/server';
-import { I18nProvider } from 'src/locales/i18n-provider';
-import { ThemeProvider } from 'src/theme/theme-provider';
-import { getInitColorSchemeScript } from 'src/theme/color-scheme-script';
-
-import { Snackbar } from 'src/components/snackbar';
-import { ProgressBar } from 'src/components/progress-bar';
-import { MotionLazy } from 'src/components/animate/motion-lazy';
-import { detectSettings } from 'src/components/settings/server';
-import { SettingsDrawer, defaultSettings, SettingsProvider } from 'src/components/settings';
-
-import { CheckoutProvider } from 'src/sections/checkout/context';
-
-import { AuthProvider } from 'src/auth/context';
+import { CONFIG } from '@/config-global';
+import { AuthProvider } from '@/auth/context';
+import { primary } from '@/theme/core/palette';
+import { LocalizationProvider } from '@/locales';
+import { Snackbar } from '@/components/snackbar';
+import { detectLanguage } from '@/locales/server';
+import { I18nProvider } from '@/locales/i18n-provider';
+import { ThemeProvider } from '@/theme/theme-provider';
+import { ProgressBar } from '@/components/progress-bar';
+import { MotionLazy } from '@/components/animate/motion-lazy';
+import { detectSettings } from '@/components/settings/server';
+import { CheckoutProvider } from '@/sections/checkout/context';
+import { getInitColorSchemeScript } from '@/theme/color-scheme-script';
+import { SettingsDrawer, defaultSettings, SettingsProvider } from '@/components/settings';
 
 // ----------------------------------------------------------------------
 

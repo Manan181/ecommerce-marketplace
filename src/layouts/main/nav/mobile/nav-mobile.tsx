@@ -1,15 +1,13 @@
 import { useEffect } from 'react';
+import { paths } from '@/routes/paths';
+import { Logo } from '@/components/logo';
+import { usePathname } from '@/routes/hooks';
+import { NavUl } from '@/components/nav-section';
+import { Scrollbar } from '@/components/scrollbar';
 
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
-
-import { paths } from 'src/routes/paths';
-import { usePathname } from 'src/routes/hooks';
-
-import { Logo } from 'src/components/logo';
-import { NavUl } from 'src/components/nav-section';
-import { Scrollbar } from 'src/components/scrollbar';
 
 import { NavList } from './nav-mobile-list';
 import { SignInButton } from '../../../components/sign-in-button';

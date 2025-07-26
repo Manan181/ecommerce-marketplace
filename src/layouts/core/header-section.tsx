@@ -3,15 +3,14 @@ import type { AppBarProps } from '@mui/material/AppBar';
 import type { ToolbarProps } from '@mui/material/Toolbar';
 import type { ContainerProps } from '@mui/material/Container';
 
+import { bgBlur, varAlpha } from '@/theme/styles';
+import { useScrollOffSetTop } from '@/hooks/use-scroll-offset-top';
+
 import Box from '@mui/material/Box';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
 import { styled, useTheme } from '@mui/material/styles';
-
-import { useScrollOffSetTop } from 'src/hooks/use-scroll-offset-top';
-
-import { bgBlur, varAlpha } from 'src/theme/styles';
 
 import { layoutClasses } from '../classes';
 

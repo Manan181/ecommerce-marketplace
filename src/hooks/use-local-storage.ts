@@ -1,7 +1,6 @@
+import { isEqual } from '@/utils/helper';
+import { localStorageGetItem } from '@/utils/storage-available';
 import { useMemo, useState, useEffect, useCallback } from 'react';
-
-import { isEqual } from 'src/utils/helper';
-import { localStorageGetItem } from 'src/utils/storage-available';
 
 // ----------------------------------------------------------------------
 

@@ -2,11 +2,9 @@
 
 import dayjs from 'dayjs';
 import { useCallback } from 'react';
+import { useRouter } from '@/routes/hooks';
+import { toast } from '@/components/snackbar';
 import { useTranslation } from 'react-i18next';
-
-import { useRouter } from 'src/routes/hooks';
-
-import { toast } from 'src/components/snackbar';
 
 import { allLangs } from './all-langs';
 import { fallbackLng, changeLangMessages as messages } from './config-locales';

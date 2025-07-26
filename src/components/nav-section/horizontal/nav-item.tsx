@@ -1,11 +1,10 @@
 import { forwardRef } from 'react';
+import { stylesMode } from '@/theme/styles';
 
 import Box from '@mui/material/Box';
 import Tooltip from '@mui/material/Tooltip';
 import { styled } from '@mui/material/styles';
 import ButtonBase from '@mui/material/ButtonBase';
-
-import { stylesMode } from 'src/theme/styles';
 
 import { useNavItem } from '../hooks';
 import { Iconify } from '../../iconify';

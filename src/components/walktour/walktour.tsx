@@ -1,8 +1,7 @@
 import dynamic from 'next/dynamic';
+import { varAlpha } from '@/theme/styles';
 
 import { useTheme } from '@mui/material/styles';
-
-import { varAlpha } from 'src/theme/styles';
 
 import { WalktourTooltip } from './walktour-tooltip';
 

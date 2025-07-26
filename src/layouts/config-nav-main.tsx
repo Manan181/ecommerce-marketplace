@@ -1,8 +1,6 @@
-import { paths } from 'src/routes/paths';
-
-import { CONFIG } from 'src/config-global';
-
-import { Iconify } from 'src/components/iconify';
+import { paths } from '@/routes/paths';
+import { CONFIG } from '@/config-global';
+import { Iconify } from '@/components/iconify';
 
 // ----------------------------------------------------------------------
 

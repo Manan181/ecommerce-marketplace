@@ -6,11 +6,10 @@ import { useMemo } from 'react';
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
 import rehypeHighlight from 'rehype-highlight';
+import { isExternalLink } from '@/routes/utils';
+import { RouterLink } from '@/routes/components';
 
 import Link from '@mui/material/Link';
-
-import { isExternalLink } from 'src/routes/utils';
-import { RouterLink } from 'src/routes/components';
 
 import { Image } from '../image';
 import { StyledRoot } from './styles';

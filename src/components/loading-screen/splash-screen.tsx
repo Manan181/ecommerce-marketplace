@@ -2,10 +2,10 @@
 
 import type { BoxProps } from '@mui/material/Box';
 
+import { AnimateLogo1 } from '@/components/animate';
+
 import Box from '@mui/material/Box';
 import Portal from '@mui/material/Portal';
-
-import { AnimateLogo1 } from 'src/components/animate';
 
 // ----------------------------------------------------------------------
 

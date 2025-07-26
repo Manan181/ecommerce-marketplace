@@ -2,13 +2,12 @@ import type { BoxProps } from '@mui/material/Box';
 import type { CSSObject } from '@mui/material/styles';
 import type { ButtonBaseProps } from '@mui/material/ButtonBase';
 
+import { varAlpha } from '@/theme/styles';
 import { Children, forwardRef, isValidElement } from 'react';
 
 import Box from '@mui/material/Box';
 import { useTheme } from '@mui/material/styles';
 import ButtonBase from '@mui/material/ButtonBase';
-
-import { varAlpha } from 'src/theme/styles';
 
 import { carouselClasses } from '../classes';
 import { CarouselSlide } from './carousel-slide';

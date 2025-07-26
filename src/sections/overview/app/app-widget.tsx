@@ -1,16 +1,14 @@
 import type { BoxProps } from '@mui/material/Box';
-import type { ChartOptions } from 'src/components/chart';
+import type { ChartOptions } from '@/components/chart';
+
+import { CONFIG } from '@/config-global';
+import { Iconify } from '@/components/iconify';
+import { fNumber } from '@/utils/format-number';
+import { SvgColor } from '@/components/svg-color';
+import { Chart, useChart } from '@/components/chart';
 
 import Box from '@mui/material/Box';
 import { useTheme } from '@mui/material/styles';
-
-import { fNumber } from 'src/utils/format-number';
-
-import { CONFIG } from 'src/config-global';
-
-import { Iconify } from 'src/components/iconify';
-import { SvgColor } from 'src/components/svg-color';
-import { Chart, useChart } from 'src/components/chart';
 
 // ----------------------------------------------------------------------
 

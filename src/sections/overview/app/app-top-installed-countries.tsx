@@ -1,15 +1,14 @@
 import type { BoxProps } from '@mui/material/Box';
 import type { CardProps } from '@mui/material/Card';
 
+import { Scrollbar } from '@/components/scrollbar';
+import { fShortenNumber } from '@/utils/format-number';
+import { Iconify, FlagIcon } from '@/components/iconify';
+
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import Typography from '@mui/material/Typography';
-
-import { fShortenNumber } from 'src/utils/format-number';
-
-import { Scrollbar } from 'src/components/scrollbar';
-import { Iconify, FlagIcon } from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 

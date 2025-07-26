@@ -1,4 +1,4 @@
-import { StatusType } from 'src/types/common';
+import { StatusType } from '@/types/common';
 
 export const CONSTANT = {
   PASSWORD_LENGTH: 8,

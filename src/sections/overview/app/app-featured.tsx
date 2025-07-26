@@ -1,22 +1,20 @@
 import type { BoxProps } from '@mui/material/Box';
 import type { CardProps } from '@mui/material/Card';
 
+import { varAlpha } from '@/theme/styles';
+import { Image } from '@/components/image';
 import Autoplay from 'embla-carousel-autoplay';
-
-import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
-import Card from '@mui/material/Card';
-import Typography from '@mui/material/Typography';
-
-import { varAlpha } from 'src/theme/styles';
-
-import { Image } from 'src/components/image';
 import {
   Carousel,
   useCarousel,
   CarouselDotButtons,
   CarouselArrowBasicButtons,
-} from 'src/components/carousel';
+} from '@/components/carousel';
+
+import Box from '@mui/material/Box';
+import Link from '@mui/material/Link';
+import Card from '@mui/material/Card';
+import Typography from '@mui/material/Typography';
 
 // ----------------------------------------------------------------------
 

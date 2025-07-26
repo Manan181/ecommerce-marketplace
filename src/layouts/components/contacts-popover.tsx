@@ -3,6 +3,10 @@
 import type { IconButtonProps } from '@mui/material/IconButton';
 
 import { m } from 'framer-motion';
+import { fToNow } from '@/utils/format-time';
+import { varHover } from '@/components/animate';
+import { Scrollbar } from '@/components/scrollbar';
+import { usePopover, CustomPopover } from '@/components/custom-popover';
 
 import Badge from '@mui/material/Badge';
 import Avatar from '@mui/material/Avatar';
@@ -11,12 +15,6 @@ import MenuItem from '@mui/material/MenuItem';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import ListItemText from '@mui/material/ListItemText';
-
-import { fToNow } from 'src/utils/format-time';
-
-import { varHover } from 'src/components/animate';
-import { Scrollbar } from 'src/components/scrollbar';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
 
 // ----------------------------------------------------------------------
 

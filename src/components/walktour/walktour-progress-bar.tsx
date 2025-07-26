@@ -1,8 +1,8 @@
+import { varAlpha } from '@/theme/styles';
+
 import Stack from '@mui/material/Stack';
 import { useTheme } from '@mui/material/styles';
 import ButtonBase from '@mui/material/ButtonBase';
-
-import { varAlpha } from 'src/theme/styles';
 
 import type { WalktourProgressBarProps } from './types';
 

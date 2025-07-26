@@ -1,6 +1,10 @@
 'use client';
 
+import { paths } from '@/routes/paths';
 import { useState, useCallback } from 'react';
+import { RoleBasedGuard } from '@/auth/guard';
+import { DashboardContent } from '@/layouts/dashboard';
+import { CustomBreadcrumbs } from '@/components/custom-breadcrumbs';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -8,14 +12,6 @@ import CardHeader from '@mui/material/CardHeader';
 import Typography from '@mui/material/Typography';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
-
-import { paths } from 'src/routes/paths';
-
-import { DashboardContent } from 'src/layouts/dashboard';
-
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
-
-import { RoleBasedGuard } from 'src/auth/guard';
 
 // ----------------------------------------------------------------------
 

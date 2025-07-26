@@ -1,14 +1,12 @@
 'use server';
 
-import type { IUser } from 'src/models/user.model';
+import type { IUser } from '@/models/user.model';
 
 import bcrypt from 'bcrypt';
-
-import { logger } from 'src/utils/logger';
-import { ServerActionError, createServerAction } from 'src/utils/action.utils';
-
-import User from 'src/models/user.model';
-import { connectDB } from 'src/lib/mongoose';
+import User from '@/models/user.model';
+import { logger } from '@/utils/logger';
+import { connectDB } from '@/lib/mongoose';
+import { ServerActionError, createServerAction } from '@/utils/action.utils';
 
 // ----------------------------------------------------------------------
 

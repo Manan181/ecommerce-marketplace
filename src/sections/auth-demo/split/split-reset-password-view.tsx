@@ -1,21 +1,18 @@
 'use client';
 
 import { z as zod } from 'zod';
+import { paths } from '@/routes/paths';
 import { useForm } from 'react-hook-form';
+import { PasswordIcon } from '@/assets/icons';
+import { Iconify } from '@/components/iconify';
+import { RouterLink } from '@/routes/components';
+import { Form, Field } from '@/components/hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import LoadingButton from '@mui/lab/LoadingButton';
-
-import { paths } from 'src/routes/paths';
-import { RouterLink } from 'src/routes/components';
-
-import { PasswordIcon } from 'src/assets/icons';
-
-import { Iconify } from 'src/components/iconify';
-import { Form, Field } from 'src/components/hook-form';
 
 // ----------------------------------------------------------------------
 

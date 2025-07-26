@@ -1,14 +1,13 @@
-import type { NavSectionProps } from 'src/components/nav-section';
+import type { NavSectionProps } from '@/components/nav-section';
+
+import { paths } from '@/routes/paths';
+import { Logo } from '@/components/logo';
+import { RouterLink } from '@/routes/components';
 
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import Button from '@mui/material/Button';
 import { styled, useTheme } from '@mui/material/styles';
-
-import { paths } from 'src/routes/paths';
-import { RouterLink } from 'src/routes/components';
-
-import { Logo } from 'src/components/logo';
 
 import { HeaderSection } from './header-section';
 import { Searchbar } from '../components/searchbar';

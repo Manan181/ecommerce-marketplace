@@ -1,6 +1,5 @@
-import { CONFIG } from 'src/config-global';
-
-import { NextAuthSignUpView } from 'src/sections/auth/nextauth';
+import { CONFIG } from '@/config-global';
+import { NextAuthSignUpView } from '@/sections/auth/nextauth';
 
 // ----------------------------------------------------------------------
 

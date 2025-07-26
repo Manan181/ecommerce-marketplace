@@ -1,14 +1,13 @@
 'use client';
 
+import { varAlpha } from '@/theme/styles';
+import { Iconify } from '@/components/iconify';
+
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress';
-
-import { varAlpha } from 'src/theme/styles';
-
-import { Iconify } from 'src/components/iconify';
 
 import type { WalktourTooltipProps } from './types';
 

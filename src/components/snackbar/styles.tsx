@@ -1,8 +1,7 @@
 import { Toaster } from 'sonner';
+import { varAlpha } from '@/theme/styles';
 
 import { styled } from '@mui/material/styles';
-
-import { varAlpha } from 'src/theme/styles';
 
 import { toasterClasses } from './classes';
 

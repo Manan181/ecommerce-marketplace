@@ -1,6 +1,8 @@
-import type { IPaymentCard } from 'src/types/common';
+import type { IPaymentCard } from '@/types/common';
 
 import { useState, useCallback } from 'react';
+import { Iconify } from '@/components/iconify';
+import { SearchNotFound } from '@/components/search-not-found';
 
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
@@ -8,9 +10,6 @@ import Dialog from '@mui/material/Dialog';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import InputAdornment from '@mui/material/InputAdornment';
-
-import { Iconify } from 'src/components/iconify';
-import { SearchNotFound } from 'src/components/search-not-found';
 
 import { PaymentCardItem } from './payment-card-item';
 

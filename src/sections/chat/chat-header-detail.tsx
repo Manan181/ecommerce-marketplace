@@ -1,6 +1,10 @@
-import type { IChatParticipant } from 'src/types/chat';
+import type { IChatParticipant } from '@/types/chat';
 
 import { useCallback } from 'react';
+import { fToNow } from '@/utils/format-time';
+import { Iconify } from '@/components/iconify';
+import { useResponsive } from '@/hooks/use-responsive';
+import { usePopover, CustomPopover } from '@/components/custom-popover';
 
 import Stack from '@mui/material/Stack';
 import Badge from '@mui/material/Badge';
@@ -11,13 +15,6 @@ import MenuItem from '@mui/material/MenuItem';
 import IconButton from '@mui/material/IconButton';
 import ListItemText from '@mui/material/ListItemText';
 import AvatarGroup, { avatarGroupClasses } from '@mui/material/AvatarGroup';
-
-import { useResponsive } from 'src/hooks/use-responsive';
-
-import { fToNow } from 'src/utils/format-time';
-
-import { Iconify } from 'src/components/iconify';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
 
 import { ChatHeaderSkeleton } from './chat-skeleton';
 

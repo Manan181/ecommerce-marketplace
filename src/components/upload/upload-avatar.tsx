@@ -1,10 +1,9 @@
+import { varAlpha } from '@/theme/styles';
 import { useState, useEffect } from 'react';
 import { useDropzone } from 'react-dropzone';
 
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-
-import { varAlpha } from 'src/theme/styles';
 
 import { Image } from '../image';
 import { Iconify } from '../iconify';

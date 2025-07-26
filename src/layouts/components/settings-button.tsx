@@ -3,12 +3,11 @@
 import type { IconButtonProps } from '@mui/material/IconButton';
 
 import { m } from 'framer-motion';
+import { useSettingsContext } from '@/components/settings/context';
 
 import Badge from '@mui/material/Badge';
 import SvgIcon from '@mui/material/SvgIcon';
 import IconButton from '@mui/material/IconButton';
-
-import { useSettingsContext } from 'src/components/settings/context';
 
 // ----------------------------------------------------------------------
 

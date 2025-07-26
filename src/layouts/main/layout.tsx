@@ -2,12 +2,11 @@
 
 import type { Theme, SxProps, Breakpoint } from '@mui/material/styles';
 
+import { usePathname } from '@/routes/hooks';
+import { useBoolean } from '@/hooks/use-boolean';
+
 import Alert from '@mui/material/Alert';
 import { useTheme } from '@mui/material/styles';
-
-import { usePathname } from 'src/routes/hooks';
-
-import { useBoolean } from 'src/hooks/use-boolean';
 
 import { Main } from './main';
 import { NavMobile } from './nav/mobile';

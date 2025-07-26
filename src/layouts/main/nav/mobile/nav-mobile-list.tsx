@@ -1,14 +1,11 @@
+import { CONFIG } from '@/config-global';
+import { varAlpha } from '@/theme/styles';
 import { useState, useCallback } from 'react';
+import { isExternalLink } from '@/routes/utils';
+import { useActiveLink } from '@/routes/hooks/use-active-link';
+import { NavLi, navSectionClasses, NavSectionVertical } from '@/components/nav-section';
 
 import Collapse from '@mui/material/Collapse';
-
-import { isExternalLink } from 'src/routes/utils';
-import { useActiveLink } from 'src/routes/hooks/use-active-link';
-
-import { CONFIG } from 'src/config-global';
-import { varAlpha } from 'src/theme/styles';
-
-import { NavLi, navSectionClasses, NavSectionVertical } from 'src/components/nav-section';
 
 import { NavItem } from './nav-mobile-item';
 

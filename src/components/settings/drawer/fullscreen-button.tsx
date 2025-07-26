@@ -1,11 +1,10 @@
 'use client';
 
+import { CONFIG } from '@/config-global';
 import { useState, useCallback } from 'react';
 
 import Tooltip from '@mui/material/Tooltip';
 import IconButton from '@mui/material/IconButton';
-
-import { CONFIG } from 'src/config-global';
 
 import { SvgColor, svgColorClasses } from '../../svg-color';
 

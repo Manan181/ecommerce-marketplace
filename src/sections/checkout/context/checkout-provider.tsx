@@ -1,16 +1,13 @@
 'use client';
 
-import type { IAddressItem } from 'src/types/common';
-import type { ICheckoutItem, ICheckoutState, CheckoutContextValue } from 'src/types/checkout';
+import type { IAddressItem } from '@/types/common';
+import type { ICheckoutItem, ICheckoutState, CheckoutContextValue } from '@/types/checkout';
 
+import { paths } from '@/routes/paths';
+import { SplashScreen } from '@/components/loading-screen';
+import { useRouter, useSearchParams } from '@/routes/hooks';
+import { getStorage, useLocalStorage } from '@/hooks/use-local-storage';
 import { useMemo, Suspense, useEffect, useCallback, createContext } from 'react';
-
-import { paths } from 'src/routes/paths';
-import { useRouter, useSearchParams } from 'src/routes/hooks';
-
-import { getStorage, useLocalStorage } from 'src/hooks/use-local-storage';
-
-import { SplashScreen } from 'src/components/loading-screen';
 
 // ----------------------------------------------------------------------
 

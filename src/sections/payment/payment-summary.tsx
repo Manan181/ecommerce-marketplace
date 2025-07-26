@@ -1,14 +1,14 @@
 import type { BoxProps } from '@mui/material/Box';
 
+import { Label } from '@/components/label';
+import { Iconify } from '@/components/iconify';
+
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Switch from '@mui/material/Switch';
 import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
-
-import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 

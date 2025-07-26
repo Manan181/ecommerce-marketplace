@@ -1,9 +1,8 @@
 import dynamic from 'next/dynamic';
 import { cloneElement } from 'react';
+import { flattenArray } from '@/utils/helper';
 
 import { useTheme } from '@mui/material/styles';
-
-import { flattenArray } from 'src/utils/helper';
 
 import type { OrgChartProps, OrgChartListProps, OrgChartSubListProps } from './types';
 

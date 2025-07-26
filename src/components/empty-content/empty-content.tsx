@@ -1,12 +1,12 @@
 import type { StackProps } from '@mui/material/Stack';
 import type { Theme, SxProps } from '@mui/material/styles';
 
+import { CONFIG } from '@/config-global';
+import { varAlpha } from '@/theme/styles';
+
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-
-import { CONFIG } from 'src/config-global';
-import { varAlpha } from 'src/theme/styles';
 
 // ----------------------------------------------------------------------
 

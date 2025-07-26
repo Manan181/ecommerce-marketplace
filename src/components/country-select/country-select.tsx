@@ -4,15 +4,14 @@ import type {
   AutocompleteRenderGetTagProps,
 } from '@mui/material/Autocomplete';
 
+import { countries } from '@/assets/data';
+import { FlagIcon, iconifyClasses } from '@/components/iconify';
+
 import Chip from '@mui/material/Chip';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import InputAdornment from '@mui/material/InputAdornment';
 import { filledInputClasses } from '@mui/material/FilledInput';
-
-import { countries } from 'src/assets/data';
-
-import { FlagIcon, iconifyClasses } from 'src/components/iconify';
 
 import { getCountry, displayValueByCountryCode } from './utils';
 

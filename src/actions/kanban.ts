@@ -1,10 +1,9 @@
 import type { UniqueIdentifier } from '@dnd-kit/core';
-import type { IKanban, IKanbanTask, IKanbanColumn } from 'src/types/kanban';
+import type { IKanban, IKanbanTask, IKanbanColumn } from '@/types/kanban';
 
 import { useMemo } from 'react';
 import useSWR, { mutate } from 'swr';
-
-import axios, { fetcher, endpoints } from 'src/utils/axios';
+import axios, { fetcher, endpoints } from '@/utils/axios';
 
 // ----------------------------------------------------------------------
 

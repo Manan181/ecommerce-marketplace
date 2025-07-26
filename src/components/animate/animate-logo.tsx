@@ -1,10 +1,9 @@
 import type { BoxProps } from '@mui/material/Box';
 
 import { m } from 'framer-motion';
+import { varAlpha } from '@/theme/styles';
 
 import Box from '@mui/material/Box';
-
-import { varAlpha } from 'src/theme/styles';
 
 import { Logo } from '../logo';
 

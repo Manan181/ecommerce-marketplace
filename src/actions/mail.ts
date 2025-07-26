@@ -1,10 +1,9 @@
-import type { IMail, IMailLabel } from 'src/types/mail';
+import type { IMail, IMailLabel } from '@/types/mail';
 
 import useSWR from 'swr';
 import { useMemo } from 'react';
-
-import { keyBy } from 'src/utils/helper';
-import { fetcher, endpoints } from 'src/utils/axios';
+import { keyBy } from '@/utils/helper';
+import { fetcher, endpoints } from '@/utils/axios';
 
 // ----------------------------------------------------------------------
 

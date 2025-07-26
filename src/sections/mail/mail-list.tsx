@@ -1,4 +1,10 @@
-import type { IMails } from 'src/types/mail';
+import type { IMails } from '@/types/mail';
+
+import { CONFIG } from '@/config-global';
+import { Iconify } from '@/components/iconify';
+import { Scrollbar } from '@/components/scrollbar';
+import { useResponsive } from '@/hooks/use-responsive';
+import { EmptyContent } from '@/components/empty-content';
 
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
@@ -6,14 +12,6 @@ import Drawer from '@mui/material/Drawer';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import InputAdornment from '@mui/material/InputAdornment';
-
-import { useResponsive } from 'src/hooks/use-responsive';
-
-import { CONFIG } from 'src/config-global';
-
-import { Iconify } from 'src/components/iconify';
-import { Scrollbar } from 'src/components/scrollbar';
-import { EmptyContent } from 'src/components/empty-content';
 
 import { MailItem } from './mail-item';
 import { MailItemSkeleton } from './mail-skeleton';

@@ -1,6 +1,8 @@
 import type { SelectChangeEvent } from '@mui/material/Select';
 
 import { useState, useCallback } from 'react';
+import { Iconify } from '@/components/iconify';
+import { usePopover, CustomPopover } from '@/components/custom-popover';
 
 import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
@@ -15,9 +17,6 @@ import FormControl from '@mui/material/FormControl';
 import ListItemText from '@mui/material/ListItemText';
 import { svgIconClasses } from '@mui/material/SvgIcon';
 import Badge, { badgeClasses } from '@mui/material/Badge';
-
-import { Iconify } from 'src/components/iconify';
-import { usePopover, CustomPopover } from 'src/components/custom-popover';
 
 // ----------------------------------------------------------------------
 

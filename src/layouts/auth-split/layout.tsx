@@ -2,13 +2,11 @@
 
 import type { Theme, SxProps, Breakpoint } from '@mui/material/styles';
 
+import { paths } from '@/routes/paths';
+import { CONFIG } from '@/config-global';
+import { useBoolean } from '@/hooks/use-boolean';
+
 import Alert from '@mui/material/Alert';
-
-import { paths } from 'src/routes/paths';
-
-import { useBoolean } from 'src/hooks/use-boolean';
-
-import { CONFIG } from 'src/config-global';
 
 import { Section } from './section';
 import { Main, Content } from './main';

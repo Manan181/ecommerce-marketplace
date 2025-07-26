@@ -3,14 +3,11 @@ import type { Theme, SxProps } from '@mui/material/styles';
 
 import { useCallback } from 'react';
 import { signOut } from 'next-auth/react';
+import { useRouter } from '@/routes/hooks';
+import { toast } from '@/components/snackbar';
+import { useAuthContext } from '@/auth/hooks';
 
 import Button from '@mui/material/Button';
-
-import { useRouter } from 'src/routes/hooks';
-
-import { toast } from 'src/components/snackbar';
-
-import { useAuthContext } from 'src/auth/hooks';
 
 // ----------------------------------------------------------------------
 

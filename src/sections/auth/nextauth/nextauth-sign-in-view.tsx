@@ -2,8 +2,16 @@
 
 import { z as zod } from 'zod';
 import { useState } from 'react';
+import { paths } from '@/routes/paths';
 import { signIn } from 'next-auth/react';
 import { useForm } from 'react-hook-form';
+import { useRouter } from '@/routes/hooks';
+import { toast } from '@/components/snackbar';
+import { useAuthContext } from '@/auth/hooks';
+import { Iconify } from '@/components/iconify';
+import { RouterLink } from '@/routes/components';
+import { useBoolean } from '@/hooks/use-boolean';
+import { Form, Field } from '@/components/hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 
 import Link from '@mui/material/Link';
@@ -13,18 +21,6 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import LoadingButton from '@mui/lab/LoadingButton';
 import InputAdornment from '@mui/material/InputAdornment';
-
-import { paths } from 'src/routes/paths';
-import { useRouter } from 'src/routes/hooks';
-import { RouterLink } from 'src/routes/components';
-
-import { useBoolean } from 'src/hooks/use-boolean';
-
-import { toast } from 'src/components/snackbar';
-import { Iconify } from 'src/components/iconify';
-import { Form, Field } from 'src/components/hook-form';
-
-import { useAuthContext } from 'src/auth/hooks';
 
 // ----------------------------------------------------------------------
 

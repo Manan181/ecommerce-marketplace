@@ -1,4 +1,4 @@
-import type { SettingsState } from 'src/components/settings';
+import type { SettingsState } from '@/components/settings';
 import type { Theme, Components } from '@mui/material/styles';
 
 import COLORS from '../core/colors.json';

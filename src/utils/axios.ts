@@ -1,8 +1,7 @@
 import type { AxiosRequestConfig } from 'axios';
 
 import axios from 'axios';
-
-import { CONFIG } from 'src/config-global';
+import { CONFIG } from '@/config-global';
 
 // ----------------------------------------------------------------------
 

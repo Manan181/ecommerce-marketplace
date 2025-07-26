@@ -1,12 +1,9 @@
 'use client';
 
+import { CONFIG } from '@/config-global';
 import { useState, useEffect } from 'react';
-
-import { useRouter, useSearchParams } from 'src/routes/hooks';
-
-import { CONFIG } from 'src/config-global';
-
-import { SplashScreen } from 'src/components/loading-screen';
+import { SplashScreen } from '@/components/loading-screen';
+import { useRouter, useSearchParams } from '@/routes/hooks';
 
 import { useAuthContext } from '../hooks';
 

@@ -1,9 +1,9 @@
 import type { IconButtonProps } from '@mui/material/IconButton';
 
+import { varAlpha } from '@/theme/styles';
+
 import SvgIcon from '@mui/material/SvgIcon';
 import IconButton from '@mui/material/IconButton';
-
-import { varAlpha } from 'src/theme/styles';
 
 // ----------------------------------------------------------------------
 

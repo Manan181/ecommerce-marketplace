@@ -2,7 +2,14 @@
 
 import type { IconButtonProps } from '@mui/material/IconButton';
 
+import { paths } from '@/routes/paths';
+import { varAlpha } from '@/theme/styles';
+import { Label } from '@/components/label';
 import { useState, useCallback } from 'react';
+import { Iconify } from '@/components/iconify';
+import { Scrollbar } from '@/components/scrollbar';
+import { AnimateAvatar } from '@/components/animate';
+import { useRouter, usePathname } from '@/routes/hooks';
 
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
@@ -13,16 +20,6 @@ import MenuItem from '@mui/material/MenuItem';
 import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
-
-import { paths } from 'src/routes/paths';
-import { useRouter, usePathname } from 'src/routes/hooks';
-
-import { varAlpha } from 'src/theme/styles';
-
-import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
-import { Scrollbar } from 'src/components/scrollbar';
-import { AnimateAvatar } from 'src/components/animate';
 
 import { UpgradeBlock } from './nav-upgrade';
 import { AccountButton } from './account-button';

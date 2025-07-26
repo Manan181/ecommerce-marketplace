@@ -1,10 +1,10 @@
-import type { IMailLabel } from 'src/types/mail';
+import type { IMailLabel } from '@/types/mail';
 import type { ListItemButtonProps } from '@mui/material/ListItemButton';
+
+import { Iconify } from '@/components/iconify';
 
 import Box from '@mui/material/Box';
 import ListItemButton from '@mui/material/ListItemButton';
-
-import { Iconify } from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 

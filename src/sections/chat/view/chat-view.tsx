@@ -1,19 +1,16 @@
 'use client';
 
-import type { IChatParticipant } from 'src/types/chat';
+import type { IChatParticipant } from '@/types/chat';
 
+import { paths } from '@/routes/paths';
+import { CONFIG } from '@/config-global';
+import { DashboardContent } from '@/layouts/dashboard';
 import { useState, useEffect, useCallback } from 'react';
+import { EmptyContent } from '@/components/empty-content';
+import { useRouter, useSearchParams } from '@/routes/hooks';
+import { useGetContacts, useGetConversation, useGetConversations } from '@/actions/chat';
 
 import Typography from '@mui/material/Typography';
-
-import { paths } from 'src/routes/paths';
-import { useRouter, useSearchParams } from 'src/routes/hooks';
-
-import { CONFIG } from 'src/config-global';
-import { DashboardContent } from 'src/layouts/dashboard';
-import { useGetContacts, useGetConversation, useGetConversations } from 'src/actions/chat';
-
-import { EmptyContent } from 'src/components/empty-content';
 
 import { Layout } from '../layout';
 import { ChatNav } from '../chat-nav';

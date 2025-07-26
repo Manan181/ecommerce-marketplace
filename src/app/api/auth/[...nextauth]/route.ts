@@ -1,12 +1,11 @@
 import type { SessionStrategy } from 'next-auth';
-import type { IUser } from 'src/models/user.model';
+import type { IUser } from '@/models/user.model';
 
 import bcrypt from 'bcrypt';
 import NextAuth from 'next-auth';
+import User from '@/models/user.model';
+import { connectDB } from '@/lib/mongoose';
 import CredentialsProvider from 'next-auth/providers/credentials';
-
-import User from 'src/models/user.model';
-import { connectDB } from 'src/lib/mongoose';
 
 const authOptions = {
   providers: [

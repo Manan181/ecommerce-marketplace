@@ -1,6 +1,5 @@
-import { CONFIG } from 'src/config-global';
-
-import { CenteredResetPasswordView } from 'src/sections/auth-demo/centered';
+import { CONFIG } from '@/config-global';
+import { CenteredResetPasswordView } from '@/sections/auth-demo/centered';
 
 // ----------------------------------------------------------------------
 

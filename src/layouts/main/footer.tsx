@@ -1,5 +1,10 @@
 import type { Theme, SxProps, Breakpoint } from '@mui/material/styles';
 
+import { paths } from '@/routes/paths';
+import { Logo } from '@/components/logo';
+import { RouterLink } from '@/routes/components';
+import { SocialIcon } from '@/components/iconify';
+
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
@@ -9,12 +14,6 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-
-import { paths } from 'src/routes/paths';
-import { RouterLink } from 'src/routes/components';
-
-import { Logo } from 'src/components/logo';
-import { SocialIcon } from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 

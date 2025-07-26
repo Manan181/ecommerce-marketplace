@@ -1,12 +1,11 @@
 import type { Breakpoint } from '@mui/material/styles';
-import type { NavSectionProps } from 'src/components/nav-section';
+import type { NavSectionProps } from '@/components/nav-section';
+
+import { varAlpha } from '@/theme/styles';
+import { NavSectionHorizontal } from '@/components/nav-section';
 
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
-
-import { varAlpha } from 'src/theme/styles';
-
-import { NavSectionHorizontal } from 'src/components/nav-section';
 
 // ----------------------------------------------------------------------
 

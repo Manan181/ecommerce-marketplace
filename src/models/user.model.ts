@@ -1,8 +1,7 @@
 import type { Model, Types } from 'mongoose';
 
-import mongoose, { Schema } from 'mongoose';
-
-import { CONSTANT } from 'src/config/constant';
+import { CONSTANT } from '@/config/constant';
+import { model, models, Schema } from 'mongoose';
 
 export interface IUser extends Document {
   _id: Types.ObjectId;
@@ -31,8 +30,6 @@ export interface IUser extends Document {
     taxId?: string;
     commission?: number;
     verified?: boolean;
-    storeBanner?: string;
-    storeDescription?: string;
     socialMedia?: {
       website?: string;
       facebook?: string;
@@ -59,7 +56,7 @@ export interface IUser extends Document {
 
 const UserSchema: Schema<IUser> = new Schema<IUser>(
   {
-    email: { type: String, required: true, unique: true, lowercase: true, trim: true },
+    email: { type: String, required: true, lowercase: true, trim: true },
     password: { type: String, required: true, minlength: CONSTANT.PASSWORD_LENGTH },
     role: {
       type: String,
@@ -95,8 +92,6 @@ const UserSchema: Schema<IUser> = new Schema<IUser>(
       taxId: { type: String },
       commission: { type: Number, default: 15 }, // Platform commission %
       verified: { type: Boolean, default: false },
-      storeBanner: { type: String },
-      storeDescription: { type: String },
       socialMedia: {
         website: { type: String },
         facebook: { type: String },
@@ -105,7 +100,7 @@ const UserSchema: Schema<IUser> = new Schema<IUser>(
       },
     },
     // Web3 integration ready
-    walletAddress: { type: String, unique: true, sparse: true },
+    walletAddress: { type: String },
     preferences: {
       newsletter: { type: Boolean, default: true },
       notifications: { type: Boolean, default: true },
@@ -122,16 +117,16 @@ const UserSchema: Schema<IUser> = new Schema<IUser>(
   { timestamps: true, toJSON: { virtuals: true }, toObject: { virtuals: true } }
 );
 
-UserSchema.index({ email: 1 });
+UserSchema.index({ email: 1 }, { unique: true });
 UserSchema.index({ role: 1 });
 UserSchema.index({ 'vendorInfo.verified': 1 });
-UserSchema.index({ walletAddress: 1 });
+UserSchema.index({ walletAddress: 1 }, { unique: true, sparse: true });
 
 // Virtual for full name
 UserSchema.virtual('fullName').get(function getFullName() {
   return `${this.profile.firstName} ${this.profile.lastName}`;
 });
 
-const User: Model<IUser> = mongoose.models.User || mongoose.model<IUser>('User', UserSchema);
+const User: Model<IUser> = models.User || model<IUser>('User', UserSchema);
 
 export default User;

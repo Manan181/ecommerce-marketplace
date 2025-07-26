@@ -147,7 +147,6 @@ export type UseCarouselReturn = {
   dots: UseCarouselDotsReturn;
   autoplay: UseCarouselAutoPlayReturn;
   progress: UseCarouselProgressReturn;
-  autoScroll: UseCarouselAutoPlayReturn;
   arrows: UseCarouselArrowsReturn;
 };
 

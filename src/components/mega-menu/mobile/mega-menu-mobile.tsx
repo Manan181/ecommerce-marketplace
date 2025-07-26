@@ -1,3 +1,5 @@
+import { usePathname } from '@/routes/hooks';
+import { Scrollbar } from '@/components/scrollbar';
 import { useState, useEffect, useCallback, cloneElement } from 'react';
 
 import Stack from '@mui/material/Stack';
@@ -5,10 +7,6 @@ import Drawer from '@mui/material/Drawer';
 import SvgIcon from '@mui/material/SvgIcon';
 import { useTheme } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
-
-import { usePathname } from 'src/routes/hooks';
-
-import { Scrollbar } from 'src/components/scrollbar';
 
 import { NavList } from './nav-list';
 import { NavUl } from '../../nav-section';

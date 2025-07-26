@@ -1,6 +1,5 @@
-import { CONFIG } from 'src/config-global';
-
-import { CenteredSignUpView } from 'src/sections/auth-demo/centered';
+import { CONFIG } from '@/config-global';
+import { CenteredSignUpView } from '@/sections/auth-demo/centered';
 
 // ----------------------------------------------------------------------
 

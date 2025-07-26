@@ -1,8 +1,7 @@
+import { usePathname } from '@/routes/hooks';
+import { isExternalLink } from '@/routes/utils';
 import { useState, useEffect, useCallback } from 'react';
-
-import { usePathname } from 'src/routes/hooks';
-import { isExternalLink } from 'src/routes/utils';
-import { useActiveLink } from 'src/routes/hooks/use-active-link';
+import { useActiveLink } from '@/routes/hooks/use-active-link';
 
 import { NavItem } from './nav-item';
 import { navSectionClasses } from '../classes';

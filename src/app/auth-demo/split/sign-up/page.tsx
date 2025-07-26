@@ -1,6 +1,5 @@
-import { CONFIG } from 'src/config-global';
-
-import { SplitSignUpView } from 'src/sections/auth-demo/split';
+import { CONFIG } from '@/config-global';
+import { SplitSignUpView } from '@/sections/auth-demo/split';
 
 // ----------------------------------------------------------------------
 

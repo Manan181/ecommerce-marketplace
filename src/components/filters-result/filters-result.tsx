@@ -1,10 +1,10 @@
 import type { ChipProps } from '@mui/material/Chip';
 import type { Theme, SxProps } from '@mui/material/styles';
 
+import { Iconify } from '@/components/iconify';
+
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-
-import { Iconify } from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 

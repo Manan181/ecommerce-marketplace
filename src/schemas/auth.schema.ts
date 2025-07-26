@@ -1,6 +1,5 @@
 import { z } from 'zod';
-
-import { CONSTANT } from 'src/config/constant';
+import { CONSTANT } from '@/config/constant';
 
 export const SignInSchema = z.object({
   email: z

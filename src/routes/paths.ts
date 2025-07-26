@@ -1,4 +1,4 @@
-import { paramCase } from 'src/utils/change-case';
+import { paramCase } from '@/utils/change-case';
 
 // ----------------------------------------------------------------------
 

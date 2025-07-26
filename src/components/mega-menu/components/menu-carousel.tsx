@@ -1,11 +1,10 @@
+import { maxLine } from '@/theme/styles';
+import { RouterLink } from '@/routes/components';
+
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
-
-import { RouterLink } from 'src/routes/components';
-
-import { maxLine } from 'src/theme/styles';
 
 import { Image } from '../../image';
 import {

@@ -1,9 +1,8 @@
-import type { IProductItem } from 'src/types/product';
+import type { IProductItem } from '@/types/product';
 
 import useSWR from 'swr';
 import { useMemo } from 'react';
-
-import { fetcher, endpoints } from 'src/utils/axios';
+import { fetcher, endpoints } from '@/utils/axios';
 
 // ----------------------------------------------------------------------
 

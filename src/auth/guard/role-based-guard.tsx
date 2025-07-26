@@ -3,13 +3,11 @@
 import type { Theme, SxProps } from '@mui/material/styles';
 
 import { m } from 'framer-motion';
+import { ForbiddenIllustration } from '@/assets/illustrations';
+import { varBounce, MotionContainer } from '@/components/animate';
 
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-
-import { ForbiddenIllustration } from 'src/assets/illustrations';
-
-import { varBounce, MotionContainer } from 'src/components/animate';
 
 // ----------------------------------------------------------------------
 

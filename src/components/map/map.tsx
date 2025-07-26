@@ -2,8 +2,7 @@ import type { MapRef, MapProps } from 'react-map-gl';
 
 import MapGL from 'react-map-gl';
 import { forwardRef } from 'react';
-
-import { CONFIG } from 'src/config-global';
+import { CONFIG } from '@/config-global';
 
 // ----------------------------------------------------------------------
 

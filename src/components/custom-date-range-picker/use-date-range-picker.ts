@@ -1,8 +1,7 @@
-import type { IDatePickerControl } from 'src/types/common';
+import type { IDatePickerControl } from '@/types/common';
 
 import { useState, useCallback } from 'react';
-
-import { fIsAfter, fDateRangeShortLabel } from 'src/utils/format-time';
+import { fIsAfter, fDateRangeShortLabel } from '@/utils/format-time';
 
 import type { UseDateRangePickerReturn } from './types';
 

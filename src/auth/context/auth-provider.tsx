@@ -1,9 +1,8 @@
 'use client';
 
 import { getSession } from 'next-auth/react';
+import { useSetState } from '@/hooks/use-set-state';
 import { useMemo, useEffect, useCallback } from 'react';
-
-import { useSetState } from 'src/hooks/use-set-state';
 
 import { AuthContext } from './auth-context';
 

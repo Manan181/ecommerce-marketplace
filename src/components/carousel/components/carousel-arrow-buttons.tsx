@@ -2,13 +2,13 @@ import type { StackProps } from '@mui/material/Stack';
 import type { CSSObject } from '@mui/material/styles';
 import type { ButtonBaseProps } from '@mui/material/ButtonBase';
 
+import { varAlpha, stylesMode } from '@/theme/styles';
+
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import SvgIcon from '@mui/material/SvgIcon';
 import { useTheme } from '@mui/material/styles';
 import ButtonBase, { buttonBaseClasses } from '@mui/material/ButtonBase';
-
-import { varAlpha, stylesMode } from 'src/theme/styles';
 
 import { carouselClasses } from '../classes';
 

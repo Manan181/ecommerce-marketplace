@@ -1,4 +1,4 @@
-import { AuthCenteredLayout } from 'src/layouts/auth-centered';
+import { AuthCenteredLayout } from '@/layouts/auth-centered';
 
 // ----------------------------------------------------------------------
 

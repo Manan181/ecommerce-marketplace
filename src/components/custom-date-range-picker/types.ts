@@ -1,4 +1,4 @@
-import type { IDatePickerControl } from 'src/types/common';
+import type { IDatePickerControl } from '@/types/common';
 
 // ----------------------------------------------------------------------
 

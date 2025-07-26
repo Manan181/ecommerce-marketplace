@@ -1,9 +1,9 @@
 import type { StackProps } from '@mui/material/Stack';
 
+import { varAlpha } from '@/theme/styles';
+
 import Stack from '@mui/material/Stack';
 import Skeleton from '@mui/material/Skeleton';
-
-import { varAlpha } from 'src/theme/styles';
 
 // ----------------------------------------------------------------------
 

@@ -1,5 +1,7 @@
 import type { DialogProps } from '@mui/material/Dialog';
 
+import { Iconify } from '@/components/iconify';
+
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
@@ -9,8 +11,6 @@ import DialogTitle from '@mui/material/DialogTitle';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import InputAdornment from '@mui/material/InputAdornment';
-
-import { Iconify } from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 

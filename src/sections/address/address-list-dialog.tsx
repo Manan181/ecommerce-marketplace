@@ -1,6 +1,10 @@
-import type { IAddressItem } from 'src/types/common';
+import type { IAddressItem } from '@/types/common';
 
+import { Label } from '@/components/label';
 import { useState, useCallback } from 'react';
+import { Iconify } from '@/components/iconify';
+import { Scrollbar } from '@/components/scrollbar';
+import { SearchNotFound } from '@/components/search-not-found';
 
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
@@ -9,11 +13,6 @@ import TextField from '@mui/material/TextField';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
 import InputAdornment from '@mui/material/InputAdornment';
-
-import { Label } from 'src/components/label';
-import { Iconify } from 'src/components/iconify';
-import { Scrollbar } from 'src/components/scrollbar';
-import { SearchNotFound } from 'src/components/search-not-found';
 
 // ----------------------------------------------------------------------
 

@@ -1,9 +1,9 @@
 import type { BoxProps } from '@mui/material/Box';
 
+import { UploadIllustration } from '@/assets/illustrations';
+
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
-
-import { UploadIllustration } from 'src/assets/illustrations';
 
 // ----------------------------------------------------------------------
 

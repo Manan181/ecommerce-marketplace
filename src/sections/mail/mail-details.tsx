@@ -1,4 +1,17 @@
-import type { IMail, IMailLabel } from 'src/types/mail';
+import type { IMail, IMailLabel } from '@/types/mail';
+
+import { CONFIG } from '@/config-global';
+import { Label } from '@/components/label';
+import { Editor } from '@/components/editor';
+import { Iconify } from '@/components/iconify';
+import { fDateTime } from '@/utils/format-time';
+import { useBoolean } from '@/hooks/use-boolean';
+import { Markdown } from '@/components/markdown';
+import { Scrollbar } from '@/components/scrollbar';
+import { maxLine, stylesMode } from '@/theme/styles';
+import { EmptyContent } from '@/components/empty-content';
+import { FileThumbnail } from '@/components/file-thumbnail';
+import { LoadingScreen } from '@/components/loading-screen';
 
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
@@ -11,22 +24,6 @@ import ButtonBase from '@mui/material/ButtonBase';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { darken, lighten, useTheme, alpha as hexAlpha } from '@mui/material/styles';
-
-import { useBoolean } from 'src/hooks/use-boolean';
-
-import { fDateTime } from 'src/utils/format-time';
-
-import { CONFIG } from 'src/config-global';
-import { maxLine, stylesMode } from 'src/theme/styles';
-
-import { Label } from 'src/components/label';
-import { Editor } from 'src/components/editor';
-import { Iconify } from 'src/components/iconify';
-import { Markdown } from 'src/components/markdown';
-import { Scrollbar } from 'src/components/scrollbar';
-import { EmptyContent } from 'src/components/empty-content';
-import { FileThumbnail } from 'src/components/file-thumbnail';
-import { LoadingScreen } from 'src/components/loading-screen';
 
 // ----------------------------------------------------------------------
 

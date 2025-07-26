@@ -1,12 +1,11 @@
 import type { FileRejection } from 'react-dropzone';
 
+import { varAlpha } from '@/theme/styles';
+import { fData } from '@/utils/format-number';
+
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
-
-import { fData } from 'src/utils/format-number';
-
-import { varAlpha } from 'src/theme/styles';
 
 import { fileData } from '../../file-thumbnail';
 

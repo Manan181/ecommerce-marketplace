@@ -1,9 +1,9 @@
 import type { StackProps } from '@mui/material/Stack';
 
+import { varAlpha } from '@/theme/styles';
+
 import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
-
-import { varAlpha } from 'src/theme/styles';
 
 import { editorClasses } from './classes';
 

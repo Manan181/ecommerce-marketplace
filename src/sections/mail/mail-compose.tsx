@@ -1,4 +1,9 @@
+import { varAlpha } from '@/theme/styles';
+import { Editor } from '@/components/editor';
 import { useState, useCallback } from 'react';
+import { Iconify } from '@/components/iconify';
+import { useBoolean } from '@/hooks/use-boolean';
+import { useResponsive } from '@/hooks/use-responsive';
 
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
@@ -9,14 +14,6 @@ import Backdrop from '@mui/material/Backdrop';
 import InputBase from '@mui/material/InputBase';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-
-import { useBoolean } from 'src/hooks/use-boolean';
-import { useResponsive } from 'src/hooks/use-responsive';
-
-import { varAlpha } from 'src/theme/styles';
-
-import { Editor } from 'src/components/editor';
-import { Iconify } from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 

@@ -4,13 +4,12 @@ import type { BoxProps } from '@mui/material/Box';
 import type { Breakpoint } from '@mui/material/styles';
 import type { ContainerProps } from '@mui/material/Container';
 
+import { layoutClasses } from '@/layouts/classes';
+import { useSettingsContext } from '@/components/settings';
+
 import Box from '@mui/material/Box';
 import { useTheme } from '@mui/material/styles';
 import Container from '@mui/material/Container';
-
-import { layoutClasses } from 'src/layouts/classes';
-
-import { useSettingsContext } from 'src/components/settings';
 
 // ----------------------------------------------------------------------
 

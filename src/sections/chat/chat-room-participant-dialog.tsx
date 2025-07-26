@@ -1,4 +1,7 @@
-import type { IChatParticipant } from 'src/types/chat';
+import type { IChatParticipant } from '@/types/chat';
+
+import { varAlpha } from '@/theme/styles';
+import { Iconify } from '@/components/iconify';
 
 import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
@@ -6,10 +9,6 @@ import Dialog from '@mui/material/Dialog';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import DialogContent from '@mui/material/DialogContent';
-
-import { varAlpha } from 'src/theme/styles';
-
-import { Iconify } from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 

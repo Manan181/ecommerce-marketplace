@@ -1,12 +1,12 @@
 import type { ButtonBaseProps } from '@mui/material/ButtonBase';
 
+import { CONFIG } from '@/config-global';
+import { varAlpha, stylesMode } from '@/theme/styles';
+
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import { useTheme } from '@mui/material/styles';
 import ButtonBase from '@mui/material/ButtonBase';
-
-import { CONFIG } from 'src/config-global';
-import { varAlpha, stylesMode } from 'src/theme/styles';
 
 import { Block } from './styles';
 import { SvgColor, svgColorClasses } from '../../svg-color';

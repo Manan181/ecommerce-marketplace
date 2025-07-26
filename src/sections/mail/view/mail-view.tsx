@@ -1,17 +1,14 @@
 'use client';
 
+import { paths } from '@/routes/paths';
 import { useEffect, useCallback } from 'react';
+import { useBoolean } from '@/hooks/use-boolean';
+import { useResponsive } from '@/hooks/use-responsive';
+import { DashboardContent } from '@/layouts/dashboard';
+import { useRouter, useSearchParams } from '@/routes/hooks';
+import { useGetMail, useGetMails, useGetLabels } from '@/actions/mail';
 
 import Typography from '@mui/material/Typography';
-
-import { paths } from 'src/routes/paths';
-import { useRouter, useSearchParams } from 'src/routes/hooks';
-
-import { useBoolean } from 'src/hooks/use-boolean';
-import { useResponsive } from 'src/hooks/use-responsive';
-
-import { DashboardContent } from 'src/layouts/dashboard';
-import { useGetMail, useGetMails, useGetLabels } from 'src/actions/mail';
 
 import { Layout } from '../layout';
 import { MailNav } from '../mail-nav';

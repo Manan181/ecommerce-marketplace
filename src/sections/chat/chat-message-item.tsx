@@ -1,14 +1,13 @@
-import type { IChatMessage, IChatParticipant } from 'src/types/chat';
+import type { IChatMessage, IChatParticipant } from '@/types/chat';
+
+import { fToNow } from '@/utils/format-time';
+import { Iconify } from '@/components/iconify';
 
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-
-import { fToNow } from 'src/utils/format-time';
-
-import { Iconify } from 'src/components/iconify';
 
 import { useMessage } from './hooks/use-message';
 

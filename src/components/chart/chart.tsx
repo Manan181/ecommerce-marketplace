@@ -1,10 +1,9 @@
 import type { BoxProps } from '@mui/material/Box';
 
 import dynamic from 'next/dynamic';
+import { withLoadingProps } from '@/utils/with-loading-props';
 
 import Box from '@mui/material/Box';
-
-import { withLoadingProps } from 'src/utils/with-loading-props';
 
 import { ChartLoading } from './chart-loading';
 
